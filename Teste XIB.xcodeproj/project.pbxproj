@@ -14,6 +14,8 @@
 		7AD587A22317362A009B9185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AD587A02317362A009B9185 /* LaunchScreen.storyboard */; };
 		7AD587AD2317362A009B9185 /* Teste_XIBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD587AC2317362A009B9185 /* Teste_XIBTests.swift */; };
 		7AD587B82317362A009B9185 /* Teste_XIBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD587B72317362A009B9185 /* Teste_XIBUITests.swift */; };
+		7AD587C9231880C5009B9185 /* Image.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD587C8231880C5009B9185 /* Image.xib */; };
+		7AD587CC23188120009B9185 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD587CA23188120009B9185 /* Image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		7AD587B32317362A009B9185 /* Teste XIBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Teste XIBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AD587B72317362A009B9185 /* Teste_XIBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teste_XIBUITests.swift; sourceTree = "<group>"; };
 		7AD587B92317362A009B9185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AD587C8231880C5009B9185 /* Image.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Image.xib; sourceTree = "<group>"; };
+		7AD587CA23188120009B9185 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +101,11 @@
 		7AD5879623173626009B9185 /* Teste XIB */ = {
 			isa = PBXGroup;
 			children = (
+				7AD587C72318807B009B9185 /* Component */,
+				7AD587C623188063009B9185 /* Controller */,
+				7AD587C523188042009B9185 /* Storyboard */,
 				7AD5879723173626009B9185 /* AppDelegate.swift */,
-				7AD5879923173626009B9185 /* ViewController.swift */,
-				7AD5879B23173626009B9185 /* Main.storyboard */,
 				7AD5879E2317362A009B9185 /* Assets.xcassets */,
-				7AD587A02317362A009B9185 /* LaunchScreen.storyboard */,
 				7AD587A32317362A009B9185 /* Info.plist */,
 			);
 			path = "Teste XIB";
@@ -123,6 +127,32 @@
 				7AD587B92317362A009B9185 /* Info.plist */,
 			);
 			path = "Teste XIBUITests";
+			sourceTree = "<group>";
+		};
+		7AD587C523188042009B9185 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7AD5879B23173626009B9185 /* Main.storyboard */,
+				7AD587A02317362A009B9185 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		7AD587C623188063009B9185 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7AD5879923173626009B9185 /* ViewController.swift */,
+				7AD587CA23188120009B9185 /* Image.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7AD587C72318807B009B9185 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				7AD587C8231880C5009B9185 /* Image.xib */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AD587A22317362A009B9185 /* LaunchScreen.storyboard in Resources */,
+				7AD587C9231880C5009B9185 /* Image.xib in Resources */,
 				7AD5879F2317362A009B9185 /* Assets.xcassets in Resources */,
 				7AD5879D23173626009B9185 /* Main.storyboard in Resources */,
 			);
@@ -257,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AD5879A23173626009B9185 /* ViewController.swift in Sources */,
+				7AD587CC23188120009B9185 /* Image.swift in Sources */,
 				7AD5879823173626009B9185 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X2Y8JTMU7;
 				INFOPLIST_FILE = "Teste XIB/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +483,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8X2Y8JTMU7;
 				INFOPLIST_FILE = "Teste XIB/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
